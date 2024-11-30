@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人簡介</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .main {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .profile-photo {
+            text-align: center;
+        }
+
+        .profile-photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .interaction button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .interaction button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h3>補充資訊</h3>
+        <p>聯絡方式：</p>
+        <ul>
+            <li>Email: example@gmail.com</li>
+            <li>Phone: 1234-456-890</li>
+        </ul>
+    </div>
+    <div class="main">
+        <!-- 照片與簡介 -->
+        <div class="section">
+            <h2>關於我</h2>
+            <div class="profile-photo">
+                <img src="./相關檔案/photo.jpg" alt="個人照片">
+            </div>
+            <p>你好！我是資科系的鄭冠華，專注於網頁開發與設計，熱愛學習新技術。</p>
+        </div>
+
+        <!-- 工作經歷與技能 -->
+        <div class="section">
+            <h2>工作經歷</h2>
+            <ul>
+                <li>2021-2022：xx日式料理 - 外場櫃台</li>
+                <li>2022~ 至今： Wxxxd Gym -實習教練</li>
+            </ul>
+            <h2>技能</h2>
+            <ul>
+                <li>HTML, JavaScript</li>
+                <li>AI生成</li>
+            </ul>
+        </div>
+
+        <!-- 放置音樂 -->
+        <div class="section">
+            <h2>音樂欣賞</h2>
+            <audio controls>
+                <source src="./相關檔案/music.mp3" type="audio/mpeg">
+                您的瀏覽器不支援音樂播放。
+            </audio>
+        </div>
+
+        <!-- 放置影片 -->
+        <div class="section">
+            <h2>影片展示</h2>
+            <video controls width="100%">
+                <source src="./相關檔案/video.mp4" type="video/mp4">
+                您的瀏覽器不支援影片播放。
+            </video>
+        </div>
+
+        <!-- 放置圖片 -->
+        <div class="section">
+            <h2>作品展示</h2>
+            <img src="./相關檔案/portfolio.png" alt="作品圖片" width="100%">
+        </div>
+
+        <!-- 放置 PDF -->
+        <div class="section">
+            <h2>履歷下載</h2>
+            <a href="resume.pdf" target="_blank">點擊下載 PDF</a>
+        </div>
+
+        <!-- 互動元素 -->
+        <div class="section interaction">
+            <h2>互動元素</h2>
+            <button onclick="alert('感謝您的參與！')">點擊我</button>
+        </div>
+
+        <!-- 位置地圖 -->
+        <div class="section map-container">
+            <h2>我的位置</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2784024338303!2d121.54206247537617!3d25.024624377822406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1732892134714!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
